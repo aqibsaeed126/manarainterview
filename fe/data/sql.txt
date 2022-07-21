@@ -1,0 +1,16 @@
+// CREATE TABLE user(
+//   id integer primary key asc,
+//   full_name text default 'Not Assigned'
+// );
+//
+// CREATE TABLE kanban(
+// id integer primary key asc,
+// user_id integer not null,
+// component text not null,
+// task text not null,
+// status text not null,
+// priority integer default 3,
+// due date not null,
+// last_updated date default current_date,
+// foreign key(user_id) references user(id)
+// );

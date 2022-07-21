@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .form-sections-Container {
+    @apply space-y-8 divide-y divide-gray-200 mb-8
+  }
+
+  .form-section-container {
+    @apply pt-8 mt-3 rounded-md shadow-lg py-8 px-5 w-full bg-white
+  }
+
+  .form-row {
+    @apply mt-6 grid grid-cols-6 gap-y-6 gap-x-4
+  }
+
+  .form-text-area {
+    @apply shadow-sm block w-full border border-gray-300 rounded-md text-sm
+  }
+
+  .form-text-area:focus {
+    @apply ring-yellow-500 border-yellow-500
+  }
+
+  .button {
+    @apply ml-3 mb-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm rounded-md font-medium text-white bg-orange
+  }
+
+  .button-secondary {
+    @apply bg-white text-orange border border-orange
+  }
+
+  .button:focus {
+    @apply outline-none ring-2 ring-offset-2 ring-yellow-500
+  }
+
+  .button:hover {
+    @apply bg-yellow-700
+  }
+
+  .rounded-button {
+    @apply button rounded-full text-xl
+  }
+
+  .grid-container {
+    @apply grid grid-cols-3 gap-4
+  }
+
+  .boxes-container {
+    @apply flex w-full flex-row space-x-4 mt-3
+  }
+
+  .gray-box {
+    @apply flex p-2 text-center text-sm w-1/4 items-center justify-center rounded-md bg-gray-100
+  }
+
+  .item-container {
+    @apply inline-flex items-baseline px-2.5 py-0.5 rounded-md text-xs font-medium
+  }
+
+  .table {
+    @apply min-w-full divide-y divide-gray-200
+  }
+
+  .thead {
+    @apply bg-gray-50
+  }
+
+  .table-header {
+    @apply px-3 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider
+  }
+
+  .table-body {
+    @apply bg-white divide-y divide-gray-200
+  }
+
+  .error-message {
+    @apply text-xs text-red-600 pt-2
+  }
+}
